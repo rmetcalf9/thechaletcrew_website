@@ -1,51 +1,35 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="bg-grey-7 text-white">
+    <q-header elevated class="text-white">
       <q-toolbar class="main-toolbar column no-wrap justify-start items-center content-start">
         <div class="row no-wrap justify-start items-center content-start">
           <img
             class="main-logo"
-            alt="Evernet properties logo"
-            src="~assets/main_logo.svg"
+            alt="The Chalet Crew Logo"
+            src="~assets/main_logo.png"
           >
           <div class="column no-wrap justify-start items-center content-start">
             <q-toolbar-title>
-              Evernet Properties Limited
+              The Chalet Crew
             </q-toolbar-title>
             <div>
-              We find properties
+              Chalet Vibes, Ski Tribe
             </div>
           </div>
         </div>
       </q-toolbar>
-      <div class="sub-toolbar bg-grey-5 fit row no-wrap justify-center items-center content-start">
-        <div v-for="item in menu_items" :key="item.name">
-          <router-link :to="item.target" class="toolbar">{{ item.name }}</router-link>
-        </div>
-      </div>
     </q-header>
 
     <q-page-container>
       <router-view />
-      <div class="bottom-sub-toolbar bg-grey-5 fit column wrap justify-center items-center content-center text-white">
-        <img
-          alt="PIMS Logo"
-          src="~assets/PIMS Logo White.png"
-          class="pims-logo"
-        >Membership number 34541 (Robert Metcalf)
-        <img
-          class="bottom-logo"
-          alt="Evernet properties logo"
-          src="~assets/main_logo.svg"
-        >
-        <div>Evernet Properties Limited |  Company Number: 15345182 | Company registered office : 86-90, Paul Street, London EC2A 4NE</div>
+      <div class="bottom-sub-toolbar fit column wrap justify-center items-center content-center text-white">
       </div>
     </q-page-container>
 
-    <q-footer elevated class="bg-grey-7 text-white">
+    <q-footer elevated class="text-white">
       <div class="footer row">
         <div class="left_footer col-grow"><router-link to="/privacy" class="toolbar">Privacy Policy</router-link></div>
-        <div class="right_footer">© 2023 All Right Reserved</div>
+        <div class="right_footer">© 2024 All Right Reserved</div>
       </div>
     </q-footer>
   </q-layout>
@@ -115,12 +99,6 @@ export default defineComponent({
 </script>
 
 <style>
-.pims-logo {
-  width: 200px;
-  height: 80px;
-  object-fit: cover;
-  object-position: 0 -10;
-}
 .main-logo {
   width: 80px;
   padding-top: 10px;
@@ -142,6 +120,7 @@ export default defineComponent({
   padding-top: 20px;
   padding-bottom: 10px;
   text-align: center;
+  background-color: #0096f5;
 }
 .sub-toolbar {
   align-items: center;
