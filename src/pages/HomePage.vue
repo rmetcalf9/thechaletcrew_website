@@ -4,13 +4,6 @@
       <h2>Let us find you a property</h2>
       <div class="flex-break"></div>
       <div class="flex row first-section">
-        <div>
-          <img
-            alt="Profile Picture"
-            src="~assets/profile-pic.png"
-            class="profile-picture"
-          >
-        </div>
         <div class="flex column">
           <div v-for="feature in features" :key="feature"><q-icon name="check_box" color="green" size="32px" />{{ feature }}</div>
         </div>
@@ -53,11 +46,6 @@ export default defineComponent({
 <style>
 .first-section {
   padding-bottom: 30px;
-}
-.profile-picture {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
 }
 .flex-break {
   flex: 1 0 100%
