@@ -60,10 +60,7 @@ export default defineComponent({
   data () {
     return {
       menu_items: [
-        {name: 'Home', target: '/'},
-        {name: 'FAQ', target: '/faq'},
-        {name: 'Contact Us', target: '/contact'},
-        {name: 'About', target: '/about'}
+        {name: 'Home', target: '/'}
       ]
     }
   },
