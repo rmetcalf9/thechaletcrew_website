@@ -29,7 +29,7 @@
     <q-footer elevated class="text-white">
       <div class="footer row">
         <div class="left_footer col-grow"><router-link to="/privacy" class="toolbar">Privacy Policy</router-link></div>
-        <div class="right_footer">© 2024 All Right Reserved</div>
+        <div class="right_footer">{{ copyright }}</div>
       </div>
     </q-footer>
   </q-layout>
@@ -48,9 +48,9 @@ export default defineComponent({
       ]
     }
   },
-  caculated: {
+  computed: {
     copyright () {
-      return '© ' + new Date().getFullYear() + ' All Right Reserved Evernet Properties Limited'
+      return '© ' + new Date().getFullYear() + ' All Right Reserved'
     }
   },
   methods: {

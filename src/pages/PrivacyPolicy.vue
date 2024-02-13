@@ -15,9 +15,9 @@
     <div class="heading">How we get the personal information and why we have it</div>
     <div>The personal information we process is provided to us directly by you for one of the following reasons:</div>
     <ul>
-      <li>To help us find a property that matches your requirements</li>
+      <li>So that we can add you to the whatsapp group for our trips</li>
     </ul>
-    <div>We use the information that you have given us in order to help us secure a property for you. We may share this information with your consent.</div>
+    <div>We use the information that you have given us in order to organise the community and run trips for you. We may share this information with your consent. (e.g. when making reservations with suppliers)</div>
     <div>Under the UK General Data Protection Regulation (UK GDPR), the lawful bases we rely on for processing this information are:</div>
     <ol>
     <li>Your consent. You are able to remove your consent at any time. You can do this by contacting us</li>
