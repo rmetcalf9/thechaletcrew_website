@@ -108,7 +108,7 @@ module.exports = configure(function (/* ctx */) {
       // Quasar plugins
       plugins: [
         'Notify',
-        'Cookies'        
+        'Cookies'
       ]
     },
 
@@ -199,7 +199,7 @@ module.exports = configure(function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'evernetproperties'
+        appId: 'thechaletcrew'
       }
     },
 

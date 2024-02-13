@@ -1,6 +1,6 @@
-# evernetproperties (evernetproperties)
+# thechaletcrew (thechaletcrew)
 
-Website for evernetproperties
+Website for thechaletcrew
 
 ## Install the dependencies
 ```bash
