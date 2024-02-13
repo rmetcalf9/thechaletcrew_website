@@ -5,7 +5,8 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/HomePage.vue') },
-      { path: 'privacy', component: () => import('pages/PrivacyPolicy.vue') }
+      { path: 'privacy', component: () => import('pages/PrivacyPolicy.vue') },
+      { path: 'postsubscribe', component: () => import('pages/Postsubsribe.vue') }      
     ]
   },
 

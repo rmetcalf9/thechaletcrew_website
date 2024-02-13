@@ -1,7 +1,7 @@
 <template>
   <div class="fit row wrap justify-center items-center content-center">
     <div class="fit row wrap justify-center items-center content-center">
-      <div class="form_heading">Apply for investor list</div>
+      <div class="form_heading">Apply to be added to whatsapp group</div>
       <div class="flex-break"></div>
       <q-form
         @reset="onReset"
@@ -50,7 +50,15 @@
         class="form-input"
         :rules="[ val => val && val.length > 0 || 'Please type something']"
       />
-      <input name="campaign_id" id="campaign_id" type="hidden" value="34e56d3d-9962-a6e1-b970-657865ca5495" />
+      <q-input
+        filled
+        color="grey"
+        v-model="description"
+        name="description"
+        label="Reasons for wanting to join"
+        class="form-input"
+      />
+      <input name="campaign_id" id="campaign_id" type="hidden" value="c31e0330-389b-7f85-066e-65cb2ac4163a" />
       <input name="redirect_url" id="redirect_url" type="hidden" :value="postSubscribeUrl" />
       <input name="assigned_user_id" id="assigned_user_id" type="hidden" value="57d17220-c1e8-056b-f46f-654cc8c17b7c" />
       <input name="moduleDir" id="moduleDir" type="hidden" value="Leads" />
@@ -68,13 +76,14 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'CrmInvestorSubForm',
+  name: 'CrmWhatsappApplySubForm',
   data () {
     return {
       first_name: '',
       last_name: '',
       phone_mobile: '',
-      email1: ''
+      email1: '',
+      description: ''
     }
   },
   computed: {
@@ -88,7 +97,11 @@ export default defineComponent({
       console.log('TODO onSubmit')
     },
     onReset () {
-      // console.log('TODO onReset')
+      this.first_name = ''
+      this.last_name = ''
+      this.phone_mobile = ''
+      this.email1 = ''
+      this.description = ''
     }
   }
 })
@@ -96,7 +109,7 @@ export default defineComponent({
 
 <style>
 .form-input {
-  min-width: 250px;
+  min-width: 300px;
   padding: 5px;
 }
 .flex-break {
